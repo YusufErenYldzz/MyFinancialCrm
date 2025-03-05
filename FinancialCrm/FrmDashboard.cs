@@ -76,6 +76,10 @@ namespace FinancialCrm
             frm.Show();
             this.Hide();
         }
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -105,5 +109,7 @@ namespace FinancialCrm
                 lblBillAmount.Text = electricBill.ToString() + " ₺";
             }
         }
+
+        
     }
 }
