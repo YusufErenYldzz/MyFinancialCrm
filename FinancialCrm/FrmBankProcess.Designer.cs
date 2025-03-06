@@ -168,7 +168,7 @@
             this.btnBillForm.Name = "btnBillForm";
             this.btnBillForm.Size = new System.Drawing.Size(187, 53);
             this.btnBillForm.TabIndex = 3;
-            this.btnBillForm.Text = "Giderler";
+            this.btnBillForm.Text = "Harcamalar";
             this.btnBillForm.UseVisualStyleBackColor = false;
             this.btnBillForm.Click += new System.EventHandler(this.btnBillForm_Click);
             // 

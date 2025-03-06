@@ -17,5 +17,10 @@ namespace FinancialCrm.Models
         public int UserId { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+
+        internal static object FirstOrDefault(Func<object, bool> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

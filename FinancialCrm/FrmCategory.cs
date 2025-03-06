@@ -94,7 +94,7 @@ namespace FinancialCrm
 
         private void btnBillingForm_Click(object sender, EventArgs e)
         {
-            FrmBilling frm = new FrmBilling();
+            FrmSpendings frm = new FrmSpendings();
             frm.Show();
             this.Hide();
         }

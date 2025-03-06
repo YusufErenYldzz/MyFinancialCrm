@@ -49,7 +49,7 @@ namespace FinancialCrm
 
         private void btnBillForm_Click(object sender, EventArgs e)
         {
-            FrmBilling frm = new FrmBilling();
+            FrmSpendings frm = new FrmSpendings();
             frm.Show();
             this.Hide();
         }

@@ -11,16 +11,16 @@ using FinancialCrm.Models;
 
 namespace FinancialCrm
 {
-    public partial class FrmBilling: Form
+    public partial class FrmSpendings : Form
     {
-        public FrmBilling()
+        public FrmSpendings()
         {
             InitializeComponent();
         }
         FinancialCrmDbEntities1 db = new FinancialCrmDbEntities1();
         private void FrmBilling_Load(object sender, EventArgs e)
         {
-            var values = db.Bills.ToList();
+            var values = db.Spendings.ToList();
             dataGridView1.DataSource = values;
 
             btnBillingForm.BackColor = Color.White;
@@ -30,26 +30,37 @@ namespace FinancialCrm
 
         private void btnBillList_Click(object sender, EventArgs e)
         {
-            var values = db.Bills.ToList();
+            var values = db.Spendings.ToList();
             dataGridView1.DataSource = values;
         }
 
         private void btnCreateBill_Click(object sender, EventArgs e)
         {
-            string title = txtBillTitle.Text;
-            decimal amount = decimal.Parse(txtBillAmount.Text);
-            string period = txtBillPeriod.Text;
+            string title = txtSpendingTitle.Text;
+            decimal amount = decimal.Parse(txtSpendingAmount.Text);
 
-            Bills bills = new Bills();
-            bills.BillTitle = title;
-            bills.BillAmount = amount;
-            bills.BillPeriod = period;
-            db.Bills.Add(bills);
-            db.SaveChanges();
-            MessageBox.Show("Ödeme Başarılı Bir Şekilde Sisteme Eklendi", "Faturalar & Ödemeler", MessageBoxButtons.OK,MessageBoxIcon.Information);
+            // Kullanıcının girdiği tarihi al
+            DateTime period;
+            if (DateTime.TryParse(txtSpendingDate.Text, out period))
+            {
+                Spendings spendings = new Spendings();
+                spendings.SpendingTitle = title;
+                spendings.SpendingAmount = amount;
+                spendings.SpendingDate = period; // Kullanıcının girdiği tarih atanıyor
 
-            var values = db.Bills.ToList();
-            dataGridView1.DataSource = values;
+                db.Spendings.Add(spendings);
+                db.SaveChanges();
+
+                MessageBox.Show("Ödeme Başarılı Bir Şekilde Sisteme Eklendi", "Faturalar & Ödemeler", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // DataGridView'i güncelle
+                var values = db.Spendings.ToList();
+                dataGridView1.DataSource = values;
+            }
+            else
+            {
+                MessageBox.Show("Geçerli bir tarih formatı giriniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
@@ -68,9 +79,9 @@ namespace FinancialCrm
         private void btnUpdateBill_Click(object sender, EventArgs e)
         {
 
-            string title = txtBillTitle.Text;
-            decimal amount = decimal.Parse(txtBillAmount.Text);
-            string period = txtBillPeriod.Text;
+            string title = txtSpendingTitle.Text;
+            decimal amount = decimal.Parse(txtSpendingAmount.Text);
+            string period = txtSpendingDate.Text;
             int id = int.Parse(txtBillId.Text);
 
             var updateValues = db.Bills.Find(id);
@@ -122,7 +133,7 @@ namespace FinancialCrm
 
         private void btnBillingForm_Click(object sender, EventArgs e)
         {
-            FrmBilling frm = new FrmBilling();
+            FrmSpendings frm = new FrmSpendings();
             frm.Show();
             this.Hide();
         }

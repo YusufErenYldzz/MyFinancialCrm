@@ -327,7 +327,7 @@
             this.btnBillingForm.Name = "btnBillingForm";
             this.btnBillingForm.Size = new System.Drawing.Size(187, 53);
             this.btnBillingForm.TabIndex = 3;
-            this.btnBillingForm.Text = "Giderler";
+            this.btnBillingForm.Text = "Harcamalar";
             this.btnBillingForm.UseVisualStyleBackColor = false;
             this.btnBillingForm.Click += new System.EventHandler(this.btnBillingForm_Click);
             // 

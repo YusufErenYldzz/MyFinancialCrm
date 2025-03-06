@@ -61,6 +61,11 @@ namespace FinancialCrm
                 series2.Points.AddXY(item.BillTitle, item.BillAmount);
             }
 
+            btnDashboardForm.BackColor = Color.White;
+            btnDashboardForm.ForeColor = Color.Black;
+            btnDashboardForm.Enabled = false;
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -107,7 +112,7 @@ namespace FinancialCrm
 
         private void btnBillForm_Click(object sender, EventArgs e)
         {
-            FrmBilling frm = new FrmBilling();
+            FrmSpendings frm = new FrmSpendings();
             frm.Show();
             this.Hide();
         }
@@ -118,7 +123,7 @@ namespace FinancialCrm
 
         private void btnBillsForm_Click(object sender, EventArgs e)
         {
-            FrmBilling frm = new FrmBilling();
+            FrmSpendings frm = new FrmSpendings();
             frm.Show();
             this.Hide();
         }
