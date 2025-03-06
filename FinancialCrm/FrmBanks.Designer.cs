@@ -115,6 +115,7 @@
             this.btnSettings.TabIndex = 6;
             this.btnSettings.Text = "Ayarlar";
             this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnDashboardForm
             // 
@@ -148,6 +149,7 @@
             this.btnBankProcessForm.TabIndex = 4;
             this.btnBankProcessForm.Text = "Banka Hareketleri";
             this.btnBankProcessForm.UseVisualStyleBackColor = false;
+            this.btnBankProcessForm.Click += new System.EventHandler(this.btnBankProcessForm_Click);
             // 
             // btnBillForm
             // 
@@ -181,6 +183,7 @@
             this.btnBillsForm.TabIndex = 2;
             this.btnBillsForm.Text = "Faturalar";
             this.btnBillsForm.UseVisualStyleBackColor = false;
+            this.btnBillsForm.Click += new System.EventHandler(this.btnBillsForm_Click);
             // 
             // btnBanksForm
             // 
@@ -266,7 +269,6 @@
             this.lblZiraatBankBalance.Size = new System.Drawing.Size(182, 73);
             this.lblZiraatBankBalance.TabIndex = 1;
             this.lblZiraatBankBalance.Text = "0.00 ₺";
-//            this.lblZiraatBankBalance.Click += new System.EventHandler(this.lblZiraatBankBalance_Click);
             // 
             // panel4
             // 

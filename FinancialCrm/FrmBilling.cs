@@ -22,6 +22,10 @@ namespace FinancialCrm
         {
             var values = db.Bills.ToList();
             dataGridView1.DataSource = values;
+
+            btnBillingForm.BackColor = Color.White;
+            btnBillingForm.ForeColor = Color.Black;
+            btnBillingForm.Enabled = false;
         }
 
         private void btnBillList_Click(object sender, EventArgs e)
@@ -97,10 +101,44 @@ namespace FinancialCrm
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            FrmLogin frm = new FrmLogin();
+            this.Close();
+
+        }
+
+        private void btnCategoryForm_Click(object sender, EventArgs e)
+        {
+            FrmCategory frm = new FrmCategory();
             frm.Show();
             this.Hide();
 
+        }
+
+        private void btnBillForm_Click(object sender, EventArgs e)
+        {
+            FrmBills frm = new FrmBills();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBillingForm_Click(object sender, EventArgs e)
+        {
+            FrmBilling frm = new FrmBilling();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBankProcess_Click(object sender, EventArgs e)
+        {
+            FrmBankProcess frm = new FrmBankProcess();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmSettings frm = new FrmSettings();
+            frm.Show();
+            this.Hide();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using FinancialCrm.Models;
 using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -40,6 +41,10 @@ namespace FinancialCrm
             var bankProcesses5 = db.BankProcesses.OrderByDescending(x => x.BankProcessId).Take(5).Skip(4).FirstOrDefault();
             lblBankProcess5.Text = bankProcesses5.Description + " " + bankProcesses5.Amount + " ₺" + " " + bankProcesses5.ProcessDate;
 
+            btnBanksForm.BackColor = Color.White;
+            btnBanksForm.ForeColor = Color.Black;
+            btnBanksForm.Enabled = false;
+
         }
 
         private void btnBillForm_Click(object sender, EventArgs e)
@@ -71,6 +76,25 @@ namespace FinancialCrm
 
         }
 
-        
+        private void btnBillsForm_Click(object sender, EventArgs e)
+        {
+            FrmBills frm = new FrmBills();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBankProcessForm_Click(object sender, EventArgs e)
+        {
+            FrmBankProcess frm = new FrmBankProcess();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmSettings frm = new FrmSettings();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

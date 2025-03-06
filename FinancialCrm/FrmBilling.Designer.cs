@@ -106,6 +106,7 @@
             this.btnSettings.TabIndex = 6;
             this.btnSettings.Text = "Ayarlar";
             this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnDashboardForm
             // 
@@ -139,6 +140,7 @@
             this.btnBankProcess.TabIndex = 4;
             this.btnBankProcess.Text = "Banka Hareketleri";
             this.btnBankProcess.UseVisualStyleBackColor = false;
+            this.btnBankProcess.Click += new System.EventHandler(this.btnBankProcess_Click);
             // 
             // btnBillingForm
             // 
@@ -155,6 +157,7 @@
             this.btnBillingForm.TabIndex = 3;
             this.btnBillingForm.Text = "Giderler";
             this.btnBillingForm.UseVisualStyleBackColor = false;
+            this.btnBillingForm.Click += new System.EventHandler(this.btnBillingForm_Click);
             // 
             // btnBillForm
             // 
@@ -171,6 +174,7 @@
             this.btnBillForm.TabIndex = 2;
             this.btnBillForm.Text = "Faturalar";
             this.btnBillForm.UseVisualStyleBackColor = false;
+            this.btnBillForm.Click += new System.EventHandler(this.btnBillForm_Click);
             // 
             // btnBanksForm
             // 
@@ -204,6 +208,7 @@
             this.btnCategoryForm.TabIndex = 0;
             this.btnCategoryForm.Text = "Kategoriler";
             this.btnCategoryForm.UseVisualStyleBackColor = false;
+            this.btnCategoryForm.Click += new System.EventHandler(this.btnCategoryForm_Click);
             // 
             // panel2
             // 
