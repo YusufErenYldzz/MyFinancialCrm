@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/bbbb4d8a-74d9-414e-b6ee-31df40c4e03a)## 📌 Finansal CRM Projesi
+## 📌 Finansal CRM Projesi
 Bu proje, kullanıcıların bütçelerini yönetebilmeleri, harcamalarını takip edebilmeleri ve banka işlemlerini kolayca gerçekleştirebilmeleri için geliştirilmiş bir Finansal CRM (Müşteri İlişkileri Yönetimi) Uygulamasıdır. Windows Forms (WinForms) kullanılarak C# diliyle geliştirilmiştir ve finansal verilerin organize edilmesini sağlamaktadır.
 
 ## 🚀 Özellikler
