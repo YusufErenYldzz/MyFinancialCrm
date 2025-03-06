@@ -498,6 +498,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FrmBankProcess";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBankProcess";
             this.Load += new System.EventHandler(this.FrmBankProcess_Load);
             this.panel2.ResumeLayout(false);

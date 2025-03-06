@@ -229,7 +229,6 @@
             this.btnCategoryForm.TabIndex = 0;
             this.btnCategoryForm.Text = "Kategoriler";
             this.btnCategoryForm.UseVisualStyleBackColor = false;
-           
             // 
             // panel1
             // 
@@ -358,6 +357,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FrmCategory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kategoriler";
             this.Load += new System.EventHandler(this.FrmCategory_Load);
             this.panel3.ResumeLayout(false);
