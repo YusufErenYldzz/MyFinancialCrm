@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.btnSignUp = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtGetPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtGetUserName = new System.Windows.Forms.TextBox();
+            this.btnBackToPage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSignUp
@@ -46,13 +47,13 @@
             this.btnSignUp.UseVisualStyleBackColor = true;
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
-            // textBox2
+            // txtGetPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(574, 219);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(280, 45);
-            this.textBox2.TabIndex = 11;
+            this.txtGetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtGetPassword.Location = new System.Drawing.Point(574, 219);
+            this.txtGetPassword.Name = "txtGetPassword";
+            this.txtGetPassword.Size = new System.Drawing.Size(280, 45);
+            this.txtGetPassword.TabIndex = 11;
             // 
             // label2
             // 
@@ -74,13 +75,24 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Kullanıcı Adı:";
             // 
-            // textBox1
+            // txtGetUserName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(574, 143);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 45);
-            this.textBox1.TabIndex = 7;
+            this.txtGetUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtGetUserName.Location = new System.Drawing.Point(574, 143);
+            this.txtGetUserName.Name = "txtGetUserName";
+            this.txtGetUserName.Size = new System.Drawing.Size(280, 45);
+            this.txtGetUserName.TabIndex = 7;
+            // 
+            // btnBackToPage
+            // 
+            this.btnBackToPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBackToPage.Location = new System.Drawing.Point(639, 346);
+            this.btnBackToPage.Name = "btnBackToPage";
+            this.btnBackToPage.Size = new System.Drawing.Size(141, 31);
+            this.btnBackToPage.TabIndex = 13;
+            this.btnBackToPage.Text = "Geri Git";
+            this.btnBackToPage.UseVisualStyleBackColor = true;
+            this.btnBackToPage.Click += new System.EventHandler(this.btnBackToPage_Click);
             // 
             // FrmSignUp
             // 
@@ -88,11 +100,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1399, 654);
+            this.Controls.Add(this.btnBackToPage);
             this.Controls.Add(this.btnSignUp);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtGetPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtGetUserName);
             this.Name = "FrmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSignUp";
@@ -104,9 +117,10 @@
         #endregion
 
         private System.Windows.Forms.Button btnSignUp;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtGetPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtGetUserName;
+        private System.Windows.Forms.Button btnBackToPage;
     }
 }
