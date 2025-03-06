@@ -20,6 +20,7 @@ namespace FinancialCrm.Models
         public string ProcessType { get; set; }
         public Nullable<decimal> Amount { get; set; }
         public Nullable<int> BankId { get; set; }
+        public string PersonInfo { get; set; }
     
         public virtual Banks Banks { get; set; }
     }

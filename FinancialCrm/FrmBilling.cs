@@ -97,7 +97,10 @@ namespace FinancialCrm
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FrmLogin frm = new FrmLogin();
+            frm.Show();
+            this.Hide();
+
         }
     }
 }

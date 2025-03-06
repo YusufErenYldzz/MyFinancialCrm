@@ -12,7 +12,7 @@ namespace FinancialCrm.Models
     using System;
     using System.Collections.Generic;
     
-    public class Users
+    public partial class Users
     {
         public int UserId { get; set; }
         public string Username { get; set; }

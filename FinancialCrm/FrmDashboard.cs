@@ -63,24 +63,6 @@ namespace FinancialCrm
 
         }
 
-        private void btnBanksForm_Click(object sender, EventArgs e)
-        {
-            FrmBanks frm = new FrmBanks();
-            frm.Show();
-            this.Hide();
-        }
-
-        private void btnBillForm_Click(object sender, EventArgs e)
-        {
-            FrmBilling frm = new FrmBilling();
-            frm.Show();
-            this.Hide();
-        }
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             count++;
@@ -110,6 +92,56 @@ namespace FinancialCrm
             }
         }
 
-        
+        private void btnCategoryForm_Click(object sender, EventArgs e)
+        {
+            FrmCategory frm = new FrmCategory();
+            frm.Show();
+            this.Hide();
+        }
+        private void btnBanksForm_Click(object sender, EventArgs e)
+        {
+            FrmBanks frm = new FrmBanks();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBillForm_Click(object sender, EventArgs e)
+        {
+            FrmBilling frm = new FrmBilling();
+            frm.Show();
+            this.Hide();
+        }
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnBillsForm_Click(object sender, EventArgs e)
+        {
+            FrmBilling frm = new FrmBilling();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBankProcessForm_Click(object sender, EventArgs e)
+        {
+            FrmBankProcess frm = new FrmBankProcess();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnDashboardForm_Click(object sender, EventArgs e)
+        {
+            FrmDashboard frm = new FrmDashboard();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmSettings frm = new FrmSettings();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

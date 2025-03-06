@@ -213,6 +213,7 @@
             this.btnCategoryForm.TabIndex = 0;
             this.btnCategoryForm.Text = "Kategoriler";
             this.btnCategoryForm.UseVisualStyleBackColor = false;
+            this.btnCategoryForm.Click += new System.EventHandler(this.btnCategoryForm_Click);
             // 
             // panel2
             // 
@@ -265,6 +266,7 @@
             this.lblZiraatBankBalance.Size = new System.Drawing.Size(182, 73);
             this.lblZiraatBankBalance.TabIndex = 1;
             this.lblZiraatBankBalance.Text = "0.00 ₺";
+//            this.lblZiraatBankBalance.Click += new System.EventHandler(this.lblZiraatBankBalance_Click);
             // 
             // panel4
             // 
